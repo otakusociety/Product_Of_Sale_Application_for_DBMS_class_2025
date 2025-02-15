@@ -1,18 +1,21 @@
 {
   "name": "pos-app",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node /workspaces/Product_Of_Sale_Application_for_DBMS_class_2025/pos-app/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Abrokwa Seth Kwaku, ",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "mongoose": "^8.10.1"
+    "mongoose": "^8.10.1",
+    "nodemon": "^3.1.9"
   }
 }
