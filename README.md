@@ -4,6 +4,20 @@
 
 Right so first off, idek, im too tired to use proper punctuation its 4 in the morning. Read the stuffs below. It will show you how this works or just use the link above idc. -Seth
 
+🌟Getting Started
+
+To start follow these in instructions
+
+    1. change directories in the terminal to pos-app. Put this into the terminal
+
+        cd pos-app
+
+    2. After that you install all the dependancies to use the app. Use this in terminal.
+
+        npm install
+
+After that, it should work. Of course, you have to make a .env file and use your own mongoDB cluster but you can easily find that information on google.
+
 📚 API Documentation
 
 You can find the full API documentation generated using Swagger UI. It’s available at: http://localhost:5000/api-docs/
