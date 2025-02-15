@@ -8,11 +8,11 @@ Right so first off, idek, im too tired to use proper punctuation its 4 in the mo
 
 To start follow these in instructions
 
-    1. change directories in the terminal to pos-app. Put this into the terminal
+1. change directories in the terminal to pos-app. Put this into the terminal
 
         cd pos-app
 
-    2. After that you install all the dependancies to use the app. Use this in terminal.
+2. After that you install all the dependancies to use the app. Use this in terminal.
 
         npm install
 
