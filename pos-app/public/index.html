@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern POS System</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Modern POS System</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><button id="view-btn">View Products</button></li>
+            <li><button id="add-btn">Add Product</button></li>
+            <li><button id="search-btn">Search Product</button></li>
+            <li><button id="filter-btn">Filter Products</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- View Products Section -->
+        <section id="view-section" class="section">
+            <h2>Product List</h2>
+            <div id="products-container">
+                <!-- Products will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Add Product Section -->
+        <section id="add-section" class="section" style="display:none;">
+            <h2>Add New Product</h2>
+            <form id="add-product-form">
+                <div class="form-group">
+                    <label for="add-name">Name:</label>
+                    <input type="text" id="add-name" required />
+                </div>
+                <div class="form-group">
+                    <label for="add-price">Price:</label>
+                    <input type="number" id="add-price" required min="0" step="0.01" />
+                </div>
+                <div class="form-group">
+                    <label for="add-stock">Stock:</label>
+                    <input type="number" id="add-stock" required min="0" />
+                </div>
+                <button type="submit">Add Product</button>
+            </form>
+        </section>
+
+        <!-- Search Product Section -->
+        <section id="search-section" class="section" style="display:none;">
+            <h2>Search Product</h2>
+            <form id="search-form">
+                <div class="form-group">
+                    <label for="search-name">Product Name:</label>
+                    <input type="text" id="search-name" required />
+                </div>
+                <button type="submit">Search</button>
+            </form>
+            <div id="search-results"></div>
+        </section>
+
+        <!-- Filter Products Section -->
+        <section id="filter-section" class="section" style="display:none;">
+            <h2>Filter Products by Price</h2>
+            <form id="filter-form">
+                <div class="form-group">
+                    <label for="min-price">Min Price:</label>
+                    <input type="number" id="min-price" min="0" step="0.01" />
+                </div>
+                <div class="form-group">
+                    <label for="max-price">Max Price:</label>
+                    <input type="number" id="max-price" min="0" step="0.01" />
+                </div>
+                <button type="submit">Filter</button>
+            </form>
+            <div id="filter-results"></div>
+        </section>
+
+        <!-- Update Product Modal -->
+        <div id="update-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close-button" id="close-update-modal">&times;</span>
+                <h2>Update Product</h2>
+                <form id="update-product-form">
+                    <input type="hidden" id="update-id" />
+                    <div class="form-group">
+                        <label for="update-name">Name:</label>
+                        <input type="text" id="update-name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="update-price">Price:</label>
+                        <input type="number" id="update-price" required min="0" step="0.01" />
+                    </div>
+                    <div class="form-group">
+                        <label for="update-stock">Stock:</label>
+                        <input type="number" id="update-stock" required min="0" />
+                    </div>
+                    <button type="submit">Update Product</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

@@ -9,12 +9,14 @@ const path = require("path");
 require("dotenv").config(); // Load environment variables
 
 const app = express();
+app.use(express.static('public'));
 const port = 5000;
 
 // Middleware
 app.use(bodyParser.json());
 app.use(cors());
 app.use(helmet()); // Add security headers
+
 
 // MongoDB connection
 const uri = process.env.MONGODB_URI;
